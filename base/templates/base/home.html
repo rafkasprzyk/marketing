@@ -2,19 +2,6 @@
 {% load static %}
 {% block content %}
 <body>
-  <div data-w-id="3fab52f2-0981-8f92-0198-1b71ac414db3" data-animation="default" data-collapse="medium" data-duration="400" data-easing="ease" data-easing2="ease" role="banner" class="uui-navbar07_component w-nav">
-    <div class="uui-navbar07_container">
-      <div class="uui-navbar07_menu-button w-nav-button">
-        <div class="menu-icon_component">
-          <div class="menu-icon_line-top"></div>
-          <div class="menu-icon_line-middle">
-            <div class="menu-icon_line-middle-inner"></div>
-          </div>
-          <div class="menu-icon_line-bottom"></div>
-        </div>
-      </div>
-    </div>
-  </div>
   <section class="uui-section_blogsection03">
     <div class="uui-page-padding">
       <div class="uui-container-large">
@@ -29,7 +16,7 @@
                 </div>
               </div>
               <div class="uui-blogsection03_button-row hide-mobile-landscape">
-                <a href="#" class="uui-button w-inline-block">
+                <a href="{% url 'blog' %}" class="uui-button w-inline-block">
                   <div>Wszystkie posty</div>
                 </a>
               </div>
@@ -64,7 +51,7 @@
                 </div>
                 <div class="uui-blogsection03_item">
                   <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09d9" href="#" class="uui-blogsection03_image-link w-inline-block">
-                    <div class="uui-blogsection03_image-wrapper"><img srcset="images/Blog-Image-8-p-500.jpeg 500w, images/Blog-Image-8.jpg 1680w" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="images/Blog-Image-8.jpg" alt="Meeting" class="uui-blogsection03_image"></div>
+                    <div class="uui-blogsection03_image-wrapper"><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/Blog-Image-8.jpg' %}" alt="Meeting" class="uui-blogsection03_image"></div>
                   </a>
                   <a href="#" class="uui-blogsection03_category-link w-inline-block">
                     <div>E-mail marketing</div>
@@ -118,8 +105,8 @@
             </div>
             <div class="uui-blogsection03_button-row mobile-landscape">
               <div class="uui-button-wrapper max-width-full-mobile-landscape">
-                <a href="#" class="uui-button w-inline-block">
-                  <div>View all posts</div>
+                <a href="{% url 'blog' %}" class="uui-button w-inline-block">
+                  <div>Wszystkie posty</div>
                 </a>
               </div>
             </div>
