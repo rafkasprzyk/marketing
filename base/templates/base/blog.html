@@ -1,163 +1,134 @@
 {% extends 'main.html' %}
 {% load static %}
 {% block content %}
-
-    <header id="blog-header-17" class="uui-section_blog07">
+  <section class="uui-section_blogsection03">
     <div class="uui-page-padding">
       <div class="uui-container-large">
         <div class="uui-padding-vertical-xhuge">
-          <div class="uui-max-width-large">
-            <div class="uui-heading-subheading">Our blog</div>
-            <h2 class="uui-heading-large">Resources and insights</h2>
-            <div class="uui-space-small"></div>
-            <div class="uui-text-size-large">The latest industry news, interviews, technologies, and resources.</div>
-          </div>
-          <div class="uui-blog07_component">
-            <div class="uui-blog07_blog-posts">
-              <div class="uui-blog07_featured-list-wrapper">
-                <div class="uui-blog07_featured-list">
-                  <div class="uui-blog07_item">
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a20" href="#" class="uui-blog07_image-link w-inline-block">
-                      <div class="uui-blog07_image-wrapper"><img srcset="images/Blog-Image-1-p-500.jpeg 500w, images/Blog-Image-1.jpg 1680w" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 190.640625px, 94vw" src="images/Blog-Image-1.jpg" alt="Woman speaking into mic at computer" class="uui-blog07_image"></div>
-                    </a>
-                    <a href="#" class="uui-blog07_category-link w-inline-block">
-                      <div>Design</div>
-                    </a>
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a26" href="#" class="uui-blog07_title-link w-inline-block">
-                      <h3 class="uui-heading-small">Podcast: Creating a better CX Community</h3>
-                      <div class="uui-blog07_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></div>
-                    </a>
-                    <div class="uui-text-size-medium">How do you create compelling presentations that wow your colleagues and impress your managers?</div>
-                    <div class="uui-blog07_author-wrapper">
-                      <div class="uui-blog07_author-image-wrapper"><img src="images/Avatar-Image-10.png" loading="lazy" alt="" class="uui-blog07_author-image"></div>
-                      <div class="uui-blog07_author-text">
-                        <div class="uui-blog07_author-heading">Natali Craig</div>
-                        <div class="uui-blog07_date-wrapper">
-                          <div class="uui-text-size-small">11 Jan 2022</div>
-                          <div class="uui-text-divider text-size-small">•</div>
-                          <div class="uui-text-size-small">5 min read</div>
-                        </div>
+          <div class="uui-blogsection03_component">
+            <div class="uui-blogsection03_heading-wrapper">
+              <div class="uui-blogsection03_heading">
+                <div class="uui-max-width-large">
+                  <h2 class="uui-heading-medium"><strong>Najnowsze Trendy, Strategie i Porady dla Profesjonalistów!</strong></h2>
+                  <div class="uui-space-xsmall"></div>
+                  <div class="uui-text-size-large">Witaj na naszym blogu! Tutaj znajdziesz cenne informacje i inspiracje z zakresu marketingu, które pomogą Ci rozwijać swoje umiejętności i osiągać sukcesy w dynamicznie zmieniającym się świecie biznesu. Od najnowszych trendów po sprawdzone strategie – wszystko w jednym miejscu! </div>
+                </div>
+              </div>
+            </div>
+            <div class="uui-blogsection03_list-wrapper">
+              <div class="w-layout-grid uui-blogsection03_list">
+                <div class="uui-blogsection03_item">
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09bf" href="{% url 'blog_post_1' %}" class="uui-blogsection03_image-link w-inline-block">
+                    <div class="uui-blogsection03_image-wrapper"><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/pr2.webp' %}" alt="Office setting" class="uui-blogsection03_image"></div>
+                  </a>
+                  <a href="{% url 'blog_post_1' %}" class="uui-blogsection03_category-link w-inline-block">
+                    <div>Public Relations</div>
+                  </a>
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09c5" href="{% url 'blog_post_1' %}" class="uui-blogsection03_title-link w-inline-block">
+                    <h3 class="uui-heading-xsmall">Doskonały pitch</h3>
+                    <div class="uui-blogsection03_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </a>
+                  <div class="uui-text-size-medium">Jak stworzyć doskonały pitch? Z tego artykułu dowiesz się co zrobić żeby informacje o twojej organizacji znalazły odbiorców</div>
+                  <div class="uui-blogsection03_author-wrapper">
+                    <div class="uui-blogsection03_author-image-wrapper"><img src="{% static 'images/1.png' %}" loading="lazy" alt="" class="uui-blogsection03_author-image"></div>
+                    <div class="uui-blogsection03_author-text">
+                      <div class="uui-blogsection03_author-heading">Rafał Kasprzyk</div>
+                      <div class="uui-blogsection03_date-wrapper">
+                        <div class="uui-text-size-small">19 czerwiec 2024</div>
+                        <div class="uui-text-divider text-size-small">•</div>
+                        <div class="uui-text-size-small">5 minut</div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <div class="uui-blog07_list-wrapper">
-                <div class="w-layout-grid uui-blog07_list">
-                  <div class="uui-blog07_item">
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a3c" href="#" class="uui-blog07_image-link w-inline-block">
-                      <div class="uui-blog07_image-wrapper"><img srcset="images/Blog-Image-9-p-1080.jpeg 1080w, images/Blog-Image-9-p-1600.jpeg 1600w, images/Blog-Image-9.jpg 1680w" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 190.640625px, 94vw" src="images/Blog-Image-9.jpg" alt="Office setting" class="uui-blog07_image"></div>
-                    </a>
-                    <a href="#" class="uui-blog07_category-link w-inline-block">
-                      <div>Design</div>
-                    </a>
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a42" href="#" class="uui-blog07_title-link w-inline-block">
-                      <h3 class="uui-heading-xsmall">UX review presentations</h3>
-                      <div class="uui-blog07_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></div>
-                    </a>
-                    <div class="uui-text-size-medium">How do you create compelling presentations that wow your colleagues and impress your managers?<br></div>
-                    <div class="uui-blog07_author-wrapper">
-                      <div class="uui-blog07_author-image-wrapper"><img src="images/Avatar-Image-1.png" loading="lazy" alt="" class="uui-blog07_author-image"></div>
-                      <div class="uui-blog07_author-text">
-                        <div class="uui-blog07_author-heading">Candice Wu</div>
-                        <div class="uui-blog07_date-wrapper">
-                          <div class="uui-text-size-small">11 Jan 2022</div>
-                          <div class="uui-text-divider text-size-small">•</div>
-                          <div class="uui-text-size-small">5 min read</div>
-                        </div>
+                <div class="uui-blogsection03_item">
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09d9" href="#" class="uui-blogsection03_image-link w-inline-block">
+                    <div class="uui-blogsection03_image-wrapper"><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/Blog-Image-8.jpg' %}" alt="Meeting" class="uui-blogsection03_image"></div>
+                  </a>
+                  <a href="#" class="uui-blogsection03_category-link w-inline-block">
+                    <div>E-mail marketing</div>
+                  </a>
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09df" href="#" class="uui-blogsection03_title-link w-inline-block">
+                    <h3 class="uui-heading-xsmall">Idealny email</h3>
+                    <div class="uui-blogsection03_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </a>
+                  <div class="uui-text-size-medium">Marketing to fajna rzecz 2. Super super sprawa.<br></div>
+                  <div class="uui-blogsection03_author-wrapper">
+                    <div class="uui-blogsection03_author-image-wrapper"><img src="{% static 'images/2.png' %}" loading="lazy" alt="" class="uui-blogsection03_author-image"></div>
+                    <div class="uui-blogsection03_author-text">
+                      <div class="uui-blogsection03_author-heading">Bartosz Nowacki</div>
+                      <div class="uui-blogsection03_date-wrapper">
+                        <div class="uui-text-size-small">11 Czerwiec 2024</div>
+                        <div class="uui-text-divider text-size-small">•</div>
+                        <div class="uui-text-size-small">5 minut</div>
                       </div>
                     </div>
                   </div>
-                  <div class="uui-blog07_item">
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a57" href="#" class="uui-blog07_image-link w-inline-block">
-                      <div class="uui-blog07_image-wrapper"><img srcset="images/Blog-Image-2-p-500.jpeg 500w, images/Blog-Image-2.jpg 1680w" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 190.640625px, 94vw" src="images/Blog-Image-2.jpg" alt="Man working at desk" class="uui-blog07_image"></div>
-                    </a>
-                    <a href="#" class="uui-blog07_category-link w-inline-block">
-                      <div>Product</div>
-                    </a>
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a5d" href="#" class="uui-blog07_title-link w-inline-block">
-                      <h3 class="uui-heading-xsmall">Migrating to Linear 101</h3>
-                      <div class="uui-blog07_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></div>
-                    </a>
-                    <div class="uui-text-size-medium">How do you create compelling presentations that wow your colleagues and impress your managers?</div>
-                    <div class="uui-blog07_author-wrapper">
-                      <div class="uui-blog07_author-image-wrapper"><img src="images/Avatar-Image-7.png" loading="lazy" alt="" class="uui-blog07_author-image"></div>
-                      <div class="uui-blog07_author-text">
-                        <div class="uui-blog07_author-heading">Phoenix Baker</div>
-                        <div class="uui-blog07_date-wrapper">
-                          <div class="uui-text-size-small">11 Jan 2022</div>
-                          <div class="uui-text-divider text-size-small">•</div>
-                          <div class="uui-text-size-small">5 min read</div>
-                        </div>
+                </div>
+                <div class="uui-blogsection03_item">
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09f4" href="#" class="uui-blogsection03_image-link w-inline-block">
+                    <div class="uui-blogsection03_image-wrapper"><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/Blog-Image-3.jpg' %}" alt="Man pinning images on wall" class="uui-blogsection03_image"></div>
+                  </a>
+                  <a href="#" class="uui-blogsection03_category-link w-inline-block">
+                    <div>Media Społecznościowe</div>
+                  </a>
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09fa" href="#" class="uui-blogsection03_title-link w-inline-block">
+                    <h3 class="uui-heading-xsmall">Marketing w socialach</h3>
+                    <div class="uui-blogsection03_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </a>
+                  <div class="uui-text-size-medium">Tekst o marketingu 3. Marketing jest fajny!<br></div>
+                  <div class="uui-blogsection03_author-wrapper">
+                    <div class="uui-blogsection03_author-image-wrapper"><img src="{% static 'images/3.png' %}" loading="lazy" alt="" class="uui-blogsection03_author-image"></div>
+                    <div class="uui-blogsection03_author-text">
+                      <div class="uui-blogsection03_author-heading">Mateusz Kusy</div>
+                      <div class="uui-blogsection03_date-wrapper">
+                        <div class="uui-text-size-small">12 Czerwiec 2024</div>
+                        <div class="uui-text-divider text-size-small">•</div>
+                        <div class="uui-text-size-small">10 minut</div>
                       </div>
                     </div>
                   </div>
-                  <div class="uui-blog07_item">
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a71" href="#" class="uui-blog07_image-link w-inline-block">
-                      <div class="uui-blog07_image-wrapper"><img srcset="images/Blog-Image-3-p-500.jpeg 500w, images/Blog-Image-3.jpg 1680w" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 190.640625px, 94vw" src="images/Blog-Image-3.jpg" alt="Man pinning images on wall" class="uui-blog07_image"></div>
-                    </a>
-                    <a href="#" class="uui-blog07_category-link w-inline-block">
-                      <div>Software Engineering</div>
-                    </a>
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a77" href="#" class="uui-blog07_title-link w-inline-block">
-                      <h3 class="uui-heading-xsmall">Building your API Stack</h3>
-                      <div class="uui-blog07_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></div>
-                    </a>
-                    <div class="uui-text-size-medium">The rise of RESTful APIs has been met by a rise in tools for creating, testing, and managing them.<br></div>
-                    <div class="uui-blog07_author-wrapper">
-                      <div class="uui-blog07_author-image-wrapper"><img src="images/Avatar-Image-6.png" loading="lazy" alt="" class="uui-blog07_author-image"></div>
-                      <div class="uui-blog07_author-text">
-                        <div class="uui-blog07_author-heading">Olivia Rhye</div>
-                        <div class="uui-blog07_date-wrapper">
-                          <div class="uui-text-size-small">11 Jan 2022</div>
-                          <div class="uui-text-divider text-size-small">•</div>
-                          <div class="uui-text-size-small">5 min read</div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="uui-blog07_item">
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a8c" href="#" class="uui-blog07_image-link w-inline-block">
-                      <div class="uui-blog07_image-wrapper"><img srcset="images/Blog-Image-6-p-500.jpeg 500w, images/Blog-Image-6-p-800.jpeg 800w, images/Blog-Image-6-p-1080.jpeg 1080w, images/Blog-Image-6-p-1600.jpeg 1600w, images/Blog-Image-6.jpg 1680w" loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, (max-width: 991px) 190.640625px, 94vw" src="images/Blog-Image-6.jpg" alt="Mountains" class="uui-blog07_image"></div>
-                    </a>
-                    <a href="#" class="uui-blog07_category-link w-inline-block">
-                      <div>Product</div>
-                    </a>
-                    <a data-w-id="7cf255fc-a27d-887a-dce2-1b3f17444a92" href="#" class="uui-blog07_title-link w-inline-block">
-                      <h3 class="uui-heading-xsmall">PM mental models</h3>
-                      <div class="uui-blog07_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                          <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
-                        </svg></div>
-                    </a>
-                    <div class="uui-text-size-medium">Mental models are simple expressions of complex processes or relationships.<br></div>
-                    <div class="uui-blog07_author-wrapper">
-                      <div class="uui-blog07_author-image-wrapper"><img src="images/Avatar-Image-8.png" loading="lazy" alt="" class="uui-blog07_author-image"></div>
-                      <div class="uui-blog07_author-text">
-                        <div class="uui-blog07_author-heading">Natali Craig</div>
-                        <div class="uui-blog07_date-wrapper">
-                          <div class="uui-text-size-small">11 Jan 2022</div>
-                          <div class="uui-text-divider text-size-small">•</div>
-                          <div class="uui-text-size-small">5 min read</div>
-                        </div>
+                </div>
+                <div class="uui-blogsection03_item">
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09f4" href="#" class="uui-blogsection03_image-link w-inline-block">
+                    <div class="uui-blogsection03_image-wrapper"><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/Blog-Image-3.jpg' %}" alt="Man pinning images on wall" class="uui-blogsection03_image"></div>
+                  </a>
+                  <a href="#" class="uui-blogsection03_category-link w-inline-block">
+                    <div>Media Społecznościowe</div>
+                  </a>
+                  <a data-w-id="d81312c2-5372-1374-7b09-3e43cfaf09fa" href="#" class="uui-blogsection03_title-link w-inline-block">
+                    <h3 class="uui-heading-xsmall">Marketing w socialach</h3>
+                    <div class="uui-blogsection03_icon w-embed"><svg width="24" height="24" viewbox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M7 17L17 7M17 7H7M17 7V17" stroke="CurrentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                      </svg></div>
+                  </a>
+                  <div class="uui-text-size-medium">Tekst o marketingu 3. Marketing jest fajny!<br></div>
+                  <div class="uui-blogsection03_author-wrapper">
+                    <div class="uui-blogsection03_author-image-wrapper"><img src="{% static 'images/3.png' %}" loading="lazy" alt="" class="uui-blogsection03_author-image"></div>
+                    <div class="uui-blogsection03_author-text">
+                      <div class="uui-blogsection03_author-heading">Mateusz Kusy</div>
+                      <div class="uui-blogsection03_date-wrapper">
+                        <div class="uui-text-size-small">12 Czerwiec 2024</div>
+                        <div class="uui-text-divider text-size-small">•</div>
+                        <div class="uui-text-size-small">10 minut</div>
                       </div>
                     </div>
                   </div>
                 </div>
               </div>
             </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-  </header>
-
+  </section>
 
 {% endblock content %}

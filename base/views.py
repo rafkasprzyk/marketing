@@ -23,3 +23,9 @@ def quiz_all(request):
 
 
     return render(request, 'base/quiz_all.html')
+
+
+def blog_post_1(request):
+
+
+    return render(request, 'base/blog_post_1.html')
