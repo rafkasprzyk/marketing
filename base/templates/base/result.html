@@ -1,0 +1,32 @@
+{% extends 'main.html' %}
+{% load static %}
+
+{% block content %}
+ <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+    <section class="uui-section_blogsection03">
+    <div class="uui-page-padding">
+
+
+
+     <div class="uui-container-large">
+         <div class="uui-padding-vertical-xhuge">
+
+
+                {% if  score  >  5 %}
+                    <h2 class="uui-heading-medium"><strong>Gratulacje! Twój wynik to {{ score }} na {{ total }} punktów.</strong></h2>
+                    <h2 class="uui-heading-medium"><strong>Jesteś mistrzem marketingu!</strong></h2>
+                {% else %}
+                    <h2 class="uui-heading-medium"><strong>Niestety! Twój wynik to tylko {{ score }} na {{ total }} punktów.</strong></h2>
+                    <h2 class="uui-heading-medium"><strong>Nie załamuj się!</strong></h2>
+
+                {% endif %}
+                <br>
+             <a href="{% url 'quiz_1' %}"><h3>Spróbuj rozwiązać quiz jeszcze raz</h3></a>
+
+        </div>
+     </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
