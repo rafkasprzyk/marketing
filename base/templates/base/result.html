@@ -14,14 +14,26 @@
 
                 {% if  score  >  5 %}
                     <h2 class="uui-heading-medium"><strong>Gratulacje! Twój wynik to {{ score }} na {{ total }} punktów.</strong></h2>
+                    <br>
+                    <div ><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/king_queen.webp' %}" alt="Office setting" class="uui-blogsection03_image_XX"></div>
+                    <br>
                     <h2 class="uui-heading-medium"><strong>Jesteś mistrzem marketingu!</strong></h2>
                 {% else %}
                     <h2 class="uui-heading-medium"><strong>Niestety! Twój wynik to tylko {{ score }} na {{ total }} punktów.</strong></h2>
+                    <br>
+                    <div ><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/crying_experts.webp' %}" alt="Office setting" class="uui-blogsection03_image_XX"></div>
+                    <br>
                     <h2 class="uui-heading-medium"><strong>Nie załamuj się!</strong></h2>
 
                 {% endif %}
                 <br>
-             <a href="{% url 'quiz_1' %}"><h3>Spróbuj rozwiązać quiz jeszcze raz</h3></a>
+            {% if title == 'pr' %}
+                <a href="{% url 'quiz_1' %}"><h3>Spróbuj rozwiązać quiz jeszcze raz</h3></a>
+            {% elif title == 'marketing' %}
+                <a href="{% url 'quiz_2' %}"><h3>Spróbuj rozwiązać quiz jeszcze raz</h3></a>
+            {% else %}
+                <a href="{% url 'quiz_3' %}"><h3>Spróbuj rozwiązać quiz jeszcze raz</h3></a>
+            {% endif %}
 
         </div>
      </div>

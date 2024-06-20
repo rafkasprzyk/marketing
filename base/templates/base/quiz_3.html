@@ -1,0 +1,52 @@
+{% extends 'main.html' %}
+{% load static %}
+
+
+
+{% block content %}
+ <link rel="stylesheet" type="text/css" href="{% static 'styles/style.css' %}">
+    <section class="uui-section_blogsection03">
+    <div class="uui-page-padding">
+
+
+
+     <div class="uui-container-large">
+         <div class="uui-padding-vertical-xhuge">
+
+
+
+
+                <form method="post">
+
+                <h2 class="uui-heading-medium"><strong>Quiz o Strategiach Rynkowych!</strong></h2>
+                <br>
+                 <div class="uui-text-size-large">Sprawdź swoją wiedzę!</div>
+                    <br>
+                    <div ><img  loading="lazy" sizes="(max-width: 479px) 93vw, (max-width: 767px) 96vw, 94vw" src="{% static 'images/mkt_strategies.webp' %}" alt="Office setting" class="uui-blogsection03_image_XX"></div>
+
+
+                <br>
+                <br>
+                {% csrf_token %}
+                {% for field in form %}
+                    <div class="radio-button">
+                    <h3 class="uui-heading-xsmall">{{ field.label_tag }}</h3>
+
+                        <br>
+
+                        <div class="uui-text-size-large">{{ field }}</div>
+                        <br>
+                        <br>
+                        <span class="checkmark"></span>
+                    </div>
+                {% endfor %}
+                <button type="submit" class="submit-button"> Sprawdź </button>
+                </form>
+
+        </div>
+     </div>
+    </div>
+  </section>
+
+
+{% endblock content %}
