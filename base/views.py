@@ -64,6 +64,13 @@ def blog_post_6(request):
 
 
 
+def blog_post_7(request):
+
+
+    return render(request, 'base/blog_post_7.html')
+
+
+
 from django.shortcuts import render
 from .forms import QuizForm, QuizForm2, QuizForm3
 
@@ -74,16 +81,16 @@ def quiz_view(request):
         if form.is_valid():
             score = 0
             correct_answers = {
-                'Q1': False,
-                'Q2': True,
+                'Q1': True,
+                'Q2': False,
                 'Q3': False,
-                'Q4': True,
+                'Q4': False,
                 'Q5': False,
-                'Q6': False,
-                'Q7': True,
+                'Q6': True,
+                'Q7': False,
                 'Q8': True,
-                'Q9': False,
-                'Q10': False,
+                'Q9': True,
+                'Q10': True,
             }
             for question, correct in correct_answers.items():
                 if form.cleaned_data[question] == str(correct):
@@ -100,16 +107,16 @@ def quiz_view2(request):
         if form.is_valid():
             score = 0
             correct_answers = {
-                'Q1': False,
-                'Q2': True,
-                'Q3': True,
+                'Q1': True,
+                'Q2': False,
+                'Q3': False,
                 'Q4': True,
-                'Q5': True,
+                'Q5': False,
                 'Q6': True,
-                'Q7': False,
+                'Q7': True,
                 'Q8': False,
-                'Q9': False,
-                'Q10': True,
+                'Q9': True,
+                'Q10': False,
             }
             for question, correct in correct_answers.items():
                 if form.cleaned_data[question] == str(correct):
@@ -127,15 +134,15 @@ def quiz_view3(request):
             score = 0
             correct_answers = {
                 'Q1': True,
-                'Q2': False,
-                'Q3': True,
-                'Q4': True,
+                'Q2': True,
+                'Q3': False,
+                'Q4': False,
                 'Q5': False,
-                'Q6': True,
-                'Q7': True,
+                'Q6': False,
+                'Q7': False,
                 'Q8': True,
-                'Q9': True,
-                'Q10': True,
+                'Q9': False,
+                'Q10': False,
             }
             for question, correct in correct_answers.items():
                 if form.cleaned_data[question] == str(correct):
