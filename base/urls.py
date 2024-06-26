@@ -12,6 +12,7 @@ urlpatterns = [
     path('blog/4/', views.blog_post_4, name='blog_post_4'),
     path('blog/5/', views.blog_post_5, name='blog_post_5'),
     path('blog/6/', views.blog_post_6, name='blog_post_6'),
+    path('blog/7/', views.blog_post_7, name='blog_post_7'),
     path('quizy/1/', views.quiz_view, name='quiz_1'),
     path('quizy/2/', views.quiz_view2, name='quiz_2'),
     path('quizy/3/', views.quiz_view3, name='quiz_3'),
